@@ -7,5 +7,6 @@ A personal book management system inspired by Goodreads
 - NodeJS for backend/API layer
 - React for frontend
 - Postman for API testing
+- Hosting/Deployment ?
 
 
