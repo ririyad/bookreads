@@ -3,8 +3,8 @@ A personal book management system inspired by Goodreads
 
 ## Tech Stack
 
-- MongoDB for data layer
-- NodeJS for backend/API layer
+- MongoDB/MySQL for data layer
+- NodeJS/Golang for backend/API layer
 - React for frontend
 - Postman for API testing
 - Hosting/Deployment ?
