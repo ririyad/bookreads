@@ -4,8 +4,8 @@
   "description": "API layer of bookreads",
   "main": "index.js",
   "scripts": {
-    "lint": "eslint app.js",
-    "start": "nodemon app.js",
+    "lint": "eslint src/app.js",
+    "start": "nodemon src/app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "ririyad",
