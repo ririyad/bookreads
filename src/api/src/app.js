@@ -4,6 +4,7 @@ const bookRouter = express.Router();
 const port = process.env.PORT || 3300;
 const books = require('./models/bookModel');
 const authors = require('./models/authorModel'); 
+const publishers = require('./models/publisherModel');
 const mongoose = require('mongoose');
 
 const url = `mongodb+srv://rashed:123@sandbox.oqcbq.mongodb.net/bookReads?retryWrites=true&w=majority`;
@@ -41,6 +42,15 @@ bookRouter.route('/books')
       } return res.send(authors);
     });
   });
+
+  bookRouter.route('/pub')
+    .get((req, res) => {
+      publishers.find((err, publishers) => {
+        if(err){
+          return res.send(err);
+        }return res.send(publishers);
+      })
+    })
 
 app.use('/api', bookRouter);
 app.get('/', (req, res) => {
