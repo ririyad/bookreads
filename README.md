@@ -14,4 +14,6 @@ A personal book management system inspired by Goodreads
 To start the project, run`npm start`
 then the `nodemon` will be started.s
 
+## GitHub and JIRA integration test
+
 
